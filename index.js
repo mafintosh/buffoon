@@ -47,7 +47,7 @@ exports.buffer = function(stream, callback) {
 			buffer[i].copy(result, offset);
 			offset += buffer[i].length;
 		}
-		callback(null, buffer);
+		callback(null, result);
 	});
 };
 
