@@ -1,6 +1,6 @@
 {
  "name":"buffoon",
- "version":"0.1.2",
+ "version":"0.1.3",
  "description":"buffer streams into strings, buffers, json or queries",
  "keywords": ["buffering", "streams", "parsing"],
  "dependencies": {"common":">=0.1.0"},
