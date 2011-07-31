@@ -53,7 +53,7 @@ exports.buffer = function(stream, callback) {
 
 var parser = function(strat) {
 	return function(stream, callback) {
-		exports.string(common.fork(callback, function(result) {
+		exports.string(stream, common.fork(callback, function(result) {
 			try {
 				result = strat(result);
 			} catch(err) {
