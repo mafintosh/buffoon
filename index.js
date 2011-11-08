@@ -65,5 +65,7 @@ var parser = function(strat) {
 	};
 };
 
-exports.json = parser(JSON.parse);
+exports.json = parser(function(str) {
+	return str ? JSON.parse(str) : null;
+});
 exports.query = parser(parseQuery);
